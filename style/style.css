@@ -39,7 +39,7 @@ p{
 }
 
 .section-title{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 /* header */
@@ -112,9 +112,9 @@ navbar.container{
 
 .jumbotron-text > .button{
     display: inline-block;
-    font-size: 20px;
     margin: 30px 10px;
     padding: 15px 30px;
+    font-size: 20px;
 }
 
 
@@ -180,13 +180,44 @@ navbar.container{
     flex-direction: row-reverse;
 }
 
-/*
 .main-ending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 700px;
-    background-color: #228b22;
+    padding: 50px;
+    text-align: center;
 }
 
+.main-ending>p{
+    padding: 0 150px;
+}
+
+.main-ending>.main-image{
+    height: 800px;
+    margin-bottom: 50px;
+}
+
+.main-ending>h3{
+    width: 40%;
+    background-image: url('../img/stars.svg');
+    background-size: contain;
+    font-size: 24px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.main-ending>.button{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #8ea1e1;
+}
+
+/*
 footer
 
 .page-footer{
