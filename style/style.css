@@ -33,6 +33,15 @@ ul{
     padding: 10px;
     border-radius: 30px;
 }
+
+p{
+    font-size: 1.3rem;
+}
+
+.section-title{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
 /* header */
 
 /* header navbar */
@@ -76,7 +85,8 @@ navbar.container{
 
 /* header introduction */
 .jumbotron{
-    padding: var(--section-padding);
+    min-height: 600px;
+    padding: 60px;
     background-color: #255ee9;
     background-image: url('../img/jumbo.png');
     background-size: cover;
@@ -96,7 +106,7 @@ navbar.container{
 }
 
 .jumbotron-text > p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 30px;
 }
 
@@ -117,35 +127,60 @@ navbar.container{
     
 }
 
-
-
-/*
-main
-.main-container section:nth-child(even){
+/* main */
+.main>.container:nth-of-type(even){
     background-color: #d3d3d3;
 }
 
 .section-wrapper{
-    width: var(--container-width);
+    width: 75%;
     padding: var(--section-padding);
     min-height: 600px;
     display: flex;
+
 }
 
 .img-container{
-    width: var(--container-width);
-    background-color: #1e90ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.main-image{
+    height: 500px;
 }
 
 .text-container{
-    width: 40%;
-    background-color: #ffc0cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+    flex-basis: 23%;
 }
 
-.section-container:nth-child(2) .section-wrapper{
+.text-container>.section-title{
+    font-size: 3rem;
+}
+
+.text-container>p{
+    font-size: 1.3rem;
+}
+
+/* .wave:nth-of-type(even){
+    transform: rotate(180deg);
+}
+
+.wave{
+    display: block;
+    color: #d3d3d3;
+} */
+
+.main>.container:nth-of-type(2)>.section-wrapper{
     flex-direction: row-reverse;
 }
 
+/*
 .main-ending{
     width: 100%;
     min-height: 700px;
