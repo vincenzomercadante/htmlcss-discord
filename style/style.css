@@ -129,7 +129,7 @@ navbar.container{
 
 /* main */
 .main>.container:nth-of-type(even){
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
 .section-wrapper{
@@ -165,14 +165,14 @@ navbar.container{
     font-size: 1.3rem;
 }
 
-/* .wave:nth-of-type(even){
+ .wave:nth-of-type(even){
     transform: rotate(180deg);
 }
 
 .wave{
     display: block;
-    color: #d3d3d3;
-} */
+    color: #f6f6f6
+} 
 
 .main>.container:nth-of-type(2)>.section-wrapper{
     flex-direction: row-reverse;
