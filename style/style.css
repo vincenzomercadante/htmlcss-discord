@@ -24,13 +24,9 @@ ul{
     list-style: none;
 }
 
-.bordered{
-    border: 2px dashed black;
-}
-
 .button{
     background-color: white;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 30px;
 }
 
@@ -42,6 +38,16 @@ p{
     font-size: 3rem;
     margin-bottom: 30px;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: solid underline white;
+    transition-duration: 10ms;
+}
+
 /* header */
 
 /* header navbar */
@@ -60,17 +66,18 @@ navbar.container{
 .navbar-container>*{
     display: flex;
     padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.header-logo > .logo{
-    height: 2.5rem;
+.header-logo >.logo{
+    font-size: 300px;
 }
 
 .header-link{  
     justify-content: center;
     flex-grow: 1;
     gap: 30px;
-    font-size: 18px;
 }
 
 .header-link >.list-item{
@@ -79,9 +86,13 @@ navbar.container{
 }
 
 .header-link >.list-item >a{
-    text-decoration: none;
     color: white;
 }
+
+.header-login>.button{
+    font-size: 1rem;
+}
+
 
 /* header introduction */
 .jumbotron{
@@ -103,6 +114,7 @@ navbar.container{
 .jumbotron h1{
     font-size: 4rem;
     line-height: 150px;
+    margin-bottom: 39px;
 }
 
 .jumbotron-text > p{
@@ -114,7 +126,7 @@ navbar.container{
     display: inline-block;
     margin: 30px 10px;
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 
@@ -142,7 +154,7 @@ navbar.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    width: 65%;
 }
 
 .main-image{
@@ -153,8 +165,7 @@ navbar.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 0;
-    flex-basis: 23%;
+    flex-basis: 25%;
 }
 
 .text-container>.section-title{
@@ -273,16 +284,23 @@ navbar.container{
     width: 25%;
     padding: 10px;
     font-size: 1.2rem;
+}
+
+.social>a{
     color: white;
-    
 }
 
 .lista-link>li{
     margin-bottom: 10px;
 }
 
+.lista-link>li>a{
+    color: white;
+}
+
 .footer-links>.lista-link>li:first-child{
-    color: #7188d8;;
+    color: #7188d8;
+    font-weight: 600;
 }
 
 .footer-wrapper{
