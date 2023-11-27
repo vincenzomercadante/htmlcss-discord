@@ -1,0 +1,163 @@
+:root{
+    --container-width: 60%;
+    --section-padding: 50px 0;
+}
+
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* generics */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.bordered{
+    border: 2px dashed black;
+}
+
+/* header */
+
+/* header navbar */
+.header-navbar{
+    min-height: 75px;
+    background-color: #add8e6;
+}
+
+.navbar-wrapper{
+    width: var(--container-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+.header-item{
+    display: flex;
+    background-color: #daa520;
+    padding: 10px;
+}
+
+.header-link{
+    width: 60%;    
+    justify-content: center;
+    flex-grow: 5;
+}
+
+.header-logo,
+.header-login{
+    width: 20%;
+}
+
+.list-item{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list-item > a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-login{
+    justify-content: flex-end;
+}
+
+/* header introduction */
+.header-introduction{
+    background-color: #00008b;
+    padding: var(--section-padding);
+}
+
+.introduction-container{
+    width: 45%;
+    min-height: 400px;
+    background-color: #ee82ee;
+}
+
+/* main */
+.main-container section:nth-child(even){
+    background-color: #d3d3d3;
+}
+
+.section-wrapper{
+    width: var(--container-width);
+    padding: var(--section-padding);
+    min-height: 600px;
+    display: flex;
+}
+
+.img-container{
+    width: var(--container-width);
+    background-color: #1e90ff;
+}
+
+.text-container{
+    width: 40%;
+    background-color: #ffc0cb;
+}
+
+.section-container:nth-child(2) .section-wrapper{
+    flex-direction: row-reverse;
+}
+
+.main-ending{
+    width: 100%;
+    min-height: 700px;
+    background-color: #228b22;
+}
+
+/* footer */
+/* first section */
+.page-footer{
+    background-color: #23272a;
+}
+
+.footer-section{
+    border-bottom: 2px solid #b4b4b3;
+}
+
+#info{
+    padding-top: 10px
+}
+
+.footer-social{
+    width: 30%;
+    background-color: #f08080;
+}
+
+.footer-info{
+    display: flex;
+    width: 70%;
+    background-color: #20b2aa;
+}
+
+.footer-links{
+    width: 25%;
+    border: 2px dashed white;
+}
+
+/* second section */
+.footer-wrapper{
+    width: var(--container-width);
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7fffd4;
+}
+
+.footer-item{
+    padding: 5px;
+    background-color: #ffb6c1;
+}
+
+
