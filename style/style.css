@@ -28,12 +28,17 @@ ul{
     border: 2px dashed black;
 }
 
+.button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
 /* header */
 
 /* header navbar */
 navbar.container{
     min-height: 100px;
-    background-color: #3161e0;
+    background-color: #255ee9;
 }
 
 .navbar-container{
@@ -48,7 +53,7 @@ navbar.container{
     padding: 10px;
 }
 
-.header-logo > img{
+.header-logo > .logo{
     height: 2.5rem;
 }
 
@@ -69,25 +74,52 @@ navbar.container{
     color: white;
 }
 
-.header-login > .button{
-    background-color: white;
-    padding: 10px;
-    border-radius: 30px;
-    font-weight: 400;
+/* header introduction */
+.jumbotron{
+    padding: var(--section-padding);
+    background-color: #255ee9;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
 }
 
-/*
-header introduction
-.header-introduction{
-    background-color: #00008b;
-    padding: var(--section-padding);
-}
-.introduction-container{
+.jumbotron-text{
     width: 45%;
     min-height: 400px;
-    background-color: #ee82ee;
 }
 
+.jumbotron h1{
+    font-size: 4rem;
+    line-height: 150px;
+}
+
+.jumbotron-text > p{
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+.jumbotron-text > .button{
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px 10px;
+    padding: 15px 30px;
+}
+
+
+.jumbotron-text >.button:first-of-type{
+    color: black;
+}
+
+.jumbotron-text >.button:last-of-type{
+    background-color: #23272a;
+    
+}
+
+
+
+/*
 main
 .main-container section:nth-child(even){
     background-color: #d3d3d3;
