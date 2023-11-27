@@ -11,6 +11,9 @@
 }
 
 /* generics */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .container{
     display: flex;
@@ -28,62 +31,64 @@ ul{
 /* header */
 
 /* header navbar */
-.header-navbar{
-    min-height: 75px;
-    background-color: #add8e6;
+navbar.container{
+    min-height: 100px;
+    background-color: #3161e0;
 }
 
-.navbar-wrapper{
-    width: var(--container-width);
+.navbar-container{
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }    
 
-.header-item{
+.navbar-container>*{
     display: flex;
-    background-color: #daa520;
     padding: 10px;
 }
 
-.header-link{
-    width: 60%;    
+.header-logo > img{
+    height: 2.5rem;
+}
+
+.header-link{  
     justify-content: center;
-    flex-grow: 5;
+    flex-grow: 1;
+    gap: 30px;
+    font-size: 18px;
 }
 
-.header-logo,
-.header-login{
-    width: 20%;
-}
-
-.list-item{
+.header-link >.list-item{
     display: inline-block;
     margin: 0 5px;
 }
 
-.list-item > a{
+.header-link >.list-item >a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.header-login{
-    justify-content: flex-end;
+.header-login > .button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 400;
 }
 
-/* header introduction */
+/*
+header introduction
 .header-introduction{
     background-color: #00008b;
     padding: var(--section-padding);
 }
-
 .introduction-container{
     width: 45%;
     min-height: 400px;
     background-color: #ee82ee;
 }
 
-/* main */
+main
 .main-container section:nth-child(even){
     background-color: #d3d3d3;
 }
@@ -115,8 +120,8 @@ ul{
     background-color: #228b22;
 }
 
-/* footer */
-/* first section */
+footer
+
 .page-footer{
     background-color: #23272a;
 }
@@ -145,7 +150,7 @@ ul{
     border: 2px dashed white;
 }
 
-/* second section */
+
 .footer-wrapper{
     width: var(--container-width);
     margin-top: 50px;
@@ -158,6 +163,7 @@ ul{
 .footer-item{
     padding: 5px;
     background-color: #ffb6c1;
-}
+} 
+
 
 
