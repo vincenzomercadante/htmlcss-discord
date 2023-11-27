@@ -30,7 +30,7 @@ ul{
 
 .button{
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
 }
 
@@ -134,10 +134,8 @@ navbar.container{
 
 .section-wrapper{
     width: 75%;
-    padding: var(--section-padding);
-    min-height: 600px;
+    padding: 100px 0;
     display: flex;
-
 }
 
 .img-container{
@@ -217,51 +215,91 @@ navbar.container{
     background-color: #8ea1e1;
 }
 
-/*
-footer
 
-.page-footer{
+.footer{
     background-color: #23272a;
+    padding: 80px;
 }
 
-.footer-section{
+.footer .section-wrapper:first-child{
     border-bottom: 2px solid #b4b4b3;
+    padding-bottom: 20px;
 }
 
-#info{
-    padding-top: 10px
+.footer .section-wrapper{
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .footer-social{
     width: 30%;
-    background-color: #f08080;
+    color: white;
 }
 
-.footer-info{
+.footer-social> *{
+    margin-bottom: 30px;
+}
+
+.footer .footer-social>h3{
+    color: #7188d8;
+    font-size: 2.5rem;
+}
+
+.footer-social > .language{
     display: flex;
+    align-items: center;
+}
+
+.footer-social>.language>img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.footer-social .social>*{
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+
+.footer-info{
     width: 70%;
-    background-color: #20b2aa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .footer-links{
     width: 25%;
-    border: 2px dashed white;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    
 }
 
+.lista-link>li{
+    margin-bottom: 10px;
+}
+
+.footer-links>.lista-link>li:first-child{
+    color: #7188d8;;
+}
 
 .footer-wrapper{
-    width: var(--container-width);
-    margin-top: 50px;
-    padding: 20px 0;
+    width: 75%;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    background-color: #7fffd4;
 }
 
-.footer-item{
-    padding: 5px;
-    background-color: #ffb6c1;
-} 
+.footer-logo>.footer-img{
+    height: 40px;
+}
 
+.footer-button .button{
+    background-color: #8ea1e1;
+    color: white;
+    font-weight: 600;
+}
 
 
